@@ -7,58 +7,38 @@ html(lang='en')
     include ./common/links
 
   body.body
-    header.header 
-      .container
-        .row
-          .col-lg-8.col.order-lg-2
-            .row.justify-content-between.align-items-center
-              .col-auto.col-lg
-                .header-search
-                  label(for="headerSearch")
-                    i.icon--search   
-                  input#headerSearch(type="text", placeholder="Search for anything...")
-              .col-auto.col-lg-auto.d-flex.align-items-center
-                .dropdown.ms-4
-                  a#dropdownLang.dropdown-toggle(href="#", data-bs-toggle="dropdown", aria-expanded="false") English
-                  ul.dropdown-menu(aria-labelledby="dropdownLang")
-                    li 
-                      a.dropdown-item(href="#") Українська
-                    li 
-                      a.dropdown-item(href="#") Polski
-                .d-none.d-lg-block.ms-4
-                  a(href="#") Sign in
-          nav.col-lg-4.col-auto.navbar.navbar-expand-lg.order-lg-1.menu-main
-            button#mainMenuBtn.navbar-toggler.collapsed.ms-3(type="button", data-bs-toggle="collapse", data-bs-target="#mainMenu", aria-controls="mainMenu", aria-expanded="false", aria-label="Toggle navigation")
-              span.line-top
-              span.line-middle
-              span.line-bottom
-            #mainMenu.navbar-collapse.collapse
-              ul.navbar-nav
-                li 
-                  a.active(href="#") Photos
-                li 
-                  a(href="#") Videos
-                li 
-                  a(href="#") Podcasts
+    include ./layouts/header
+    
     .container
-      aside
-        i.icon--photos
-        | All photos
-        i.icon--selfies
-        | Selfies
-        i.icon--recent
-        | Recent
-        i.icon--delete
-        | Deleted
-      main
-        | All photos
-        | 150 items
-        | Newest
-        | Latest
-        | Heading
-        | Here goes some sample, example text that is relatively short.
-        | Show more...
-        | Save to collection
-        | Share
+      .row
+        aside.col-md-4.d-none.d-md-block.ps-0.sidebar-left
+          nav.sidebar-menu
+            ul.list-unstyled
+              li.active
+                a(href="#")
+                  i.icon--photos
+                  | All photos
+              li
+                a(href="#")
+                  i.icon--selfies
+                  | Selfies
+              li
+                a(href="#")
+                  i.icon--recent
+                  | Recent
+              li
+                a(href="#")
+                  i.icon--delete
+                  | Deleted
+        main.col-lg-8.col
+          | All photos
+          | 150 items
+          | Newest
+          | Latest
+          | Heading
+          | Here goes some sample, example text that is relatively short.
+          | Show more...
+          | Save to collection
+          | Share
 
     include ./common/scripts

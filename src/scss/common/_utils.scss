@@ -13,4 +13,10 @@
         -o-transition: height 0s ease;
             transition: height 0s ease;
   }
+
+  @media(max-width: 991px){
+    .container{
+      max-width: 100%;
+    }
+  }
 }

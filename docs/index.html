@@ -37,32 +37,52 @@
               </div>
             </div>
           </div>
-          <nav class="col-lg-4 col-auto navbar navbar-expand-lg order-lg-1 menu-main">
-            <button class="navbar-toggler collapsed ms-3" id="mainMenuBtn" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="line-top"></span><span class="line-middle"></span><span class="line-bottom"></span></button>
-            <div class="navbar-collapse collapse" id="mainMenu">
-              <ul class="navbar-nav">
-                <li> <a class="active" href="#">Photos</a></li>
-                <li> <a href="#">Videos</a></li>
-                <li> <a href="#">Podcasts</a></li>
-              </ul>
-            </div>
-          </nav>
+          <div class="col-lg-4 col-auto order-lg-1">
+            <nav class="navbar navbar-expand-lg menu-main">
+              <button class="navbar-toggler collapsed ms-3" id="mainMenuBtn" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="line-top"></span><span class="line-middle"></span><span class="line-bottom"></span></button>
+              <div class="navbar-collapse collapse" id="mainMenu">
+                <ul class="navbar-nav">
+                  <li> <a class="active" href="#">Photos</a>
+                    <ul class="d-lg-none list-unstyled">
+                      <li><a href="#"><i class="icon--photos"></i>All photos</a></li>
+                      <li><a href="#"><i class="icon--selfies"></i>Selfies</a></li>
+                      <li><a href="#"><i class="icon--recent"></i>Recent</a></li>
+                      <li><a href="#"><i class="icon--delete"></i>Deleted</a></li>
+                    </ul>
+                  </li>
+                  <li> <a href="#">Videos</a></li>
+                  <li> <a href="#">Podcasts</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
     <div class="container">
-      <aside><i class="icon--photos"></i>All photos<i class="icon--selfies"></i>Selfies<i class="icon--recent"></i>Recent<i class="icon--delete"></i>Deleted</aside>
-      <main>
-        All photos
-        150 items
-        Newest
-        Latest
-        Heading
-        Here goes some sample, example text that is relatively short.
-        Show more...
-        Save to collection
-        Share
-      </main>
+      <div class="row">
+        <aside class="col-md-4 d-none d-md-block ps-0 sidebar-left">
+          <nav class="sidebar-menu">
+            <ul class="list-unstyled">
+              <li class="active"><a href="#"><i class="icon--photos"></i>All photos</a></li>
+              <li><a href="#"><i class="icon--selfies"></i>Selfies</a></li>
+              <li><a href="#"><i class="icon--recent"></i>Recent</a></li>
+              <li><a href="#"><i class="icon--delete"></i>Deleted</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <main class="col-lg-8 col">
+          All photos
+          150 items
+          Newest
+          Latest
+          Heading
+          Here goes some sample, example text that is relatively short.
+          Show more...
+          Save to collection
+          Share
+        </main>
+      </div>
     </div>
     <script src="./js/main.js?v=20230407" type="module"></script>
     <script src="./vendors/bootstrap/bootstrap.bundle.min.js"></script>

@@ -14,19 +14,19 @@
 
 .icon{
   &--photos{
-    mask: url('/images/icons/photo.svg');
+    mask: url('../images/icons/photo.svg');
   }
 
   &--selfies{
-    mask: url('/images/icons/selfies.svg');
+    mask: url('../images/icons/selfies.svg');
   }
   
   &--recent{
-    mask: url('/images/icons/recent.svg');
+    mask: url('../images/icons/recent.svg');
   }
 
   &--delete{
-    mask: url('/images/icons/delete.svg');
+    mask: url('../images/icons/delete.svg');
   }
 
   &--search{

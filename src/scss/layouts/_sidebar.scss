@@ -1,0 +1,33 @@
+.sidebar-left{
+  padding-top: 56px;
+  min-width: 273px;
+}
+
+.sidebar-menu{
+  a{
+    font-weight: bold;
+    line-height: remCalc(24);
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 273px;
+    padding: 10px 15px 12px 15px;
+    color: $secondary;
+
+    i{
+      margin-right: 11px;
+    }
+  }
+
+  .active{
+    a{
+      background-color: $orange;
+      color: white;
+      border-radius: 8px;
+
+      i{
+        background-color: white;
+      }
+    }
+  }
+}
