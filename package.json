@@ -1,0 +1,50 @@
+{
+  "name": "frontend-assignment",
+  "version": "1.0.0",
+  "description": "<!DOCTYPE html> <html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"> <head> \t<meta charset=\"utf-8\"/> </head> <body>",
+  "main": "gulpfile.babel.js",
+  "dependencies": {
+    "minimatch": "^3.0.4",
+    "nan": "^2.14.2",
+    "number-is-nan": "^1.0.1",
+    "parse-json": "^2.2.0",
+    "path-exists": "^2.1.0",
+    "path-is-absolute": "^1.0.1",
+    "path-parse": "^1.0.7",
+    "path-type": "^1.1.0",
+    "pify": "^2.3.0",
+    "pinkie": "^2.0.4",
+    "pinkie-promise": "^2.0.1",
+    "process-nextick-args": "^2.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/register": "^7.13.16",
+    "autoprefixer": "^10.4.0",
+    "browser-sync": "^2.27.7",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^5.0.12",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "node-sass": "^7.0.0",
+    "postcss": "^8.4.4",
+    "sort-css-media-queries": "^2.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": ""
+}

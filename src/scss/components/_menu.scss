@@ -1,0 +1,126 @@
+@media(max-width: 991px){
+  .menu-main{
+    &.navbar{
+      position: static;
+    }
+
+    .navbar-toggler {
+      padding: 0;
+      border: none;
+      width: 25px;
+      height: 25px;
+      position: relative;
+
+      &:focus{
+        box-shadow: none;
+      }
+
+      span{
+        display: inline-block;
+        height: 2px;
+        width: 20px;
+        position: absolute;
+        transition: all .2s linear;
+        background-color: $secondary;
+        right: 0;
+
+        &.line-top{
+          top: 5px;
+        }
+
+        &.line-middle {
+          top: 11px;
+        }
+
+        &.line-bottom {
+          top: 17px;
+        }
+      }
+
+      &[aria-expanded="true"]{
+        span{
+          &.line-top{
+            top: 11px;
+            transform: rotate(45deg);
+          }
+
+          &.line-middle {
+            opacity: 0;
+          }
+
+          &.line-bottom {
+            transform: rotate(-45deg);
+            top: 11px;
+          }
+        }
+      }
+    }
+
+    .navbar-collapse{
+      position: absolute;
+      top: 74px;
+      width: 100%;
+      right: 0;
+      background-color: white;
+      z-index: 100;
+      padding: 15px;
+      max-width: 320px;
+      min-height: calc(100vh - 74px);
+      box-shadow: 0 6px 40px rgba(0,0,0,.25);
+    }
+
+    .navbar-nav li a{
+      display: block;
+      padding: 5px 0;
+    }
+  }
+
+  .main-menu-opened::after {
+    -webkit-transition: background-color .7s ease;
+    transition: background-color .7s ease;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+  }
+}
+
+.body .dropdown-toggle:after{
+  border: none;
+  background-image: url("../images/icons/chevron-down-small.svg");
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 8px;
+  background-size: 13px auto;
+  vertical-align: .16em;
+}
+
+@media(min-width: 992px){
+  .menu-main{
+    li{
+      margin-right: 24px;
+      line-height: remCalc(24);
+
+      .active{
+        position: relative;
+        font-weight: 700;
+        color: $dark;
+
+        &:after{
+          content: '';
+          display: block;
+          height: 2px;
+          position: absolute;
+          background-color: $orange;
+          width: 100%;
+          bottom: -27px;
+        }
+      }
+    }
+  }
+}

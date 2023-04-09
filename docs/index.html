@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title> Frontend assignment</title>
+    <link rel="stylesheet" href="./css/main.css?v=20230407">
+    <link rel="stylesheet" href="./vendors/bootstrap/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  </head>
+  <body class="body">
+    <header class="header"> 
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col order-lg-2">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-auto col-lg">
+                <div class="header-search">
+                  <label for="headerSearch"><i class="icon--search">  </i></label>
+                  <input id="headerSearch" type="text" placeholder="Search for anything...">
+                </div>
+              </div>
+              <div class="col-auto col-lg-auto d-flex align-items-center">
+                <div class="dropdown ms-4"><a class="dropdown-toggle" id="dropdownLang" href="#" data-bs-toggle="dropdown" aria-expanded="false">English</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownLang">
+                    <li> <a class="dropdown-item" href="#">Українська</a></li>
+                    <li> <a class="dropdown-item" href="#">Polski</a></li>
+                  </ul>
+                </div>
+                <div class="d-none d-lg-block ms-4"><a href="#">Sign in</a></div>
+              </div>
+            </div>
+          </div>
+          <nav class="col-lg-4 col-auto navbar navbar-expand-lg order-lg-1 menu-main">
+            <button class="navbar-toggler collapsed ms-3" id="mainMenuBtn" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="line-top"></span><span class="line-middle"></span><span class="line-bottom"></span></button>
+            <div class="navbar-collapse collapse" id="mainMenu">
+              <ul class="navbar-nav">
+                <li> <a class="active" href="#">Photos</a></li>
+                <li> <a href="#">Videos</a></li>
+                <li> <a href="#">Podcasts</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <aside><i class="icon--photos"></i>All photos<i class="icon--selfies"></i>Selfies<i class="icon--recent"></i>Recent<i class="icon--delete"></i>Deleted</aside>
+      <main>
+        All photos
+        150 items
+        Newest
+        Latest
+        Heading
+        Here goes some sample, example text that is relatively short.
+        Show more...
+        Save to collection
+        Share
+      </main>
+    </div>
+    <script src="./js/main.js?v=20230407" type="module"></script>
+    <script src="./vendors/bootstrap/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+@mixin iconStyle {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+[class*='icon'] {
+    @include iconStyle;
+    background-color: $secondary;
+    mask-size: cover;
+    mask-repeat: no-repeat !important;
+}
+
+.icon{
+  &--photos{
+    mask: url('/images/icons/photo.svg');
+  }
+
+  &--selfies{
+    mask: url('/images/icons/selfies.svg');
+  }
+  
+  &--recent{
+    mask: url('/images/icons/recent.svg');
+  }
+
+  &--delete{
+    mask: url('/images/icons/delete.svg');
+  }
+
+  &--search{
+    mask: url('/images/icons/search.svg');
+  }
+}

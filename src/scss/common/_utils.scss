@@ -1,0 +1,16 @@
+.body {
+  a{
+    text-decoration: none;
+    color: $dark;
+
+    &:hover, &:active{
+      color: $secondary;
+    }
+  }
+
+  .collapsing {
+    -webkit-transition: height 0s ease;
+        -o-transition: height 0s ease;
+            transition: height 0s ease;
+  }
+}
