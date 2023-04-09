@@ -4,25 +4,25 @@ body.body{
   color: $main-text;
 }
 
-// $font-sizes: (
-//   13, 15, 18, 32, 36, 64
-// );
+$font-sizes: (
+  14, 40
+);
 
-// $line-height: (
-//   18, 42, 50
-// );
+$line-height: (
+  40
+);
 
-// @each $size in $font-sizes {
-//   .fs-#{$size} {
-//     font-size: remCalc($size);
-//   }
-// }
+@each $size in $font-sizes {
+  .fs-#{$size} {
+    font-size: remCalc($size);
+  }
+}
 
-// @each $size in $line-height {
-//   .lh-#{$size} {
-//     line-height: remCalc($size);
-//   }
-// }
+@each $size in $line-height {
+  .lh-#{$size} {
+    line-height: remCalc($size);
+  }
+}
 
 .fw-{
   &500{
@@ -32,3 +32,8 @@ body.body{
     font-weight: 700;
   }
 }
+
+.text-dark{
+  color: $dark;
+}
+

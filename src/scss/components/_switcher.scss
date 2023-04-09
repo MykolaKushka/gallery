@@ -1,0 +1,24 @@
+.content-switcher{
+  border-radius: 8px;
+  border: 1px solid $border;
+  color: $dark;
+  font-weight: bold;
+  line-height: 150%;
+  margin-top: 10px;
+  overflow: hidden;
+
+  ul{
+    display: flex;
+    margin-bottom: 0;
+
+    li{
+      padding: 7px 20px 9px;
+      cursor: pointer;
+
+      &.active{
+        background-color: $dark;
+        color: white;
+      }
+    }
+  }
+}

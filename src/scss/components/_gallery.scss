@@ -1,0 +1,15 @@
+.photo-card{
+  border: 1px solid $border;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.photo-card-image{
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.photo-card-footer{
+  border-top: 1px solid $border;
+}

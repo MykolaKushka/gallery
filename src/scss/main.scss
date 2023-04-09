@@ -5,7 +5,11 @@
 
 @import './common/utils';
 
+@import './components/btns';
 @import './components/menu';
+@import './components/switcher';
+@import './components/gallery';
 
 @import './layouts/headers';
 @import './layouts/sidebar';
+@import './layouts/content';
