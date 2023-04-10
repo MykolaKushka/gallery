@@ -1,0 +1,24 @@
+.body.dark-mode{
+  background-color: $dark;
+
+  .header{
+    background-color: $dark;
+  }
+
+  a{
+    color: $gray-1;
+
+    &:hover, &:active{
+      color: $secondary;
+    }
+  }
+
+  .menu-main li .active, .text-dark, .content-switcher{
+    color: white !important;
+  }
+
+  .content-switcher ul li.active{
+    background-color: white;
+    color: $dark;
+  }
+}

@@ -2,6 +2,10 @@ body.body{
   font-family: $base-font-family;
   font-size: $base-font-size + px;
   color: $main-text;
+
+  .text-dark{
+    color: $dark !important;
+  }
 }
 
 $font-sizes: (
@@ -31,9 +35,5 @@ $line-height: (
   &700{
     font-weight: 700;
   }
-}
-
-.text-dark{
-  color: $dark;
 }
 
